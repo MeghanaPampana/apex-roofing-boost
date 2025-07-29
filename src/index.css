@@ -2,32 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Roofing Business Design System - Professional colors for trust and reliability
+/* Sleek Modern Dark Design System - High-tech premium aesthetic
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 210 20% 15%;
+    --background: 220 13% 9%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 20% 15%;
+    --card: 220 13% 9%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 15%;
+    --popover: 220 13% 9%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 217 91% 50%;
+    --primary: 142 76% 36%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 91% 65%;
+    --primary-glow: 142 76% 50%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 210 20% 15%;
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 20% 50%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 25 95% 53%;
+    --accent: 142 76% 36%;
     --accent-foreground: 0 0% 100%;
 
     --warning: 25 95% 53%;
@@ -36,27 +36,39 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 31% 91%;
-    --input: 214 31% 91%;
-    --ring: 217 91% 50%;
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 142 76% 36%;
 
-    /* Custom roofing business tokens */
-    --roofing-blue: 217 91% 50%;
-    --roofing-blue-dark: 217 91% 35%;
-    --roofing-orange: 25 95% 53%;
-    --roofing-gray: 210 10% 23%;
-    --roofing-light-gray: 210 20% 95%;
+    /* Custom sleek design tokens */
+    --charcoal: 220 13% 9%;
+    --charcoal-light: 220 13% 15%;
+    --charcoal-lighter: 220 13% 20%;
+    --green-primary: 142 76% 36%;
+    --green-bright: 142 76% 50%;
+    --green-dark: 142 76% 25%;
+    --glass-bg: 220 13% 9%;
+    --glass-border: 220 13% 25%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--roofing-blue)), hsl(var(--roofing-blue-dark)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--roofing-orange)), hsl(25 95% 45%));
+    /* Advanced gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--green-primary)), hsl(var(--charcoal)));
+    --gradient-section: linear-gradient(180deg, hsl(var(--charcoal)) 0%, hsl(var(--charcoal-light)) 50%, hsl(var(--charcoal)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--charcoal-light)) 0%, hsl(var(--charcoal)) 100%);
+    --gradient-green-to-black: linear-gradient(135deg, hsl(var(--green-primary)), hsl(var(--green-dark)), hsl(var(--charcoal)));
     
-    /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--roofing-blue) / 0.2);
-    --shadow-form: 0 20px 40px -10px hsl(var(--roofing-blue) / 0.15);
+    /* Glassmorphism effects */
+    --glass-light: hsla(220, 13%, 15%, 0.8);
+    --glass-medium: hsla(220, 13%, 12%, 0.9);
+    --glass-dark: hsla(220, 13%, 9%, 0.95);
     
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Advanced shadows */
+    --shadow-glass: 0 8px 32px hsla(0, 0%, 0%, 0.4);
+    --shadow-green-glow: 0 0 40px hsla(142, 76%, 36%, 0.3);
+    --shadow-card-hover: 0 20px 60px hsla(0, 0%, 0%, 0.6);
+    
+    /* Smooth transitions */
+    --transition-glass: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --radius: 0.5rem;
 
@@ -123,5 +135,25 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: var(--gradient-section);
+  }
+
+  /* Glassmorphism utility classes */
+  .glass-card {
+    background: var(--glass-medium);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-form {
+    background: var(--glass-dark);
+    backdrop-filter: blur(24px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glow-green {
+    box-shadow: var(--shadow-green-glow);
   }
 }

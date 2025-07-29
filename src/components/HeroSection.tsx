@@ -14,20 +14,25 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-roofing-light-gray to-background">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-20 relative overflow-hidden">
+      {/* Green to black gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-sleek-green/20 via-sleek-charcoal to-sleek-charcoal-light"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_hsl(var(--green-primary))_0%,_transparent_50%)] opacity-20"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video Section */}
           <div className="relative">
-            <div className="relative rounded-lg overflow-hidden shadow-xl">
+            <div className="relative rounded-2xl overflow-hidden glass-card hover:glow-green transition-all duration-500">
               <img 
                 src={heroVideoThumb} 
                 alt="Roofing Services Video" 
                 className="w-full h-64 md:h-80 object-cover"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                <Button size="lg" className="rounded-full p-4 bg-white/90 hover:bg-white text-roofing-blue hover:scale-105">
-                  <Play className="h-6 w-6" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Button size="lg" variant="gradient" className="rounded-full p-6 shadow-2xl">
+                  <Play className="h-8 w-8" />
                 </Button>
               </div>
             </div>
@@ -35,53 +40,53 @@ const HeroSection = () => {
 
           {/* Form Section */}
           <div>
-            <Card className="shadow-2xl border-0" style={{ boxShadow: 'var(--shadow-form)' }}>
-              <CardHeader className="bg-gradient-to-r from-roofing-blue to-roofing-blue-dark text-white rounded-t-lg">
-                <CardTitle className="text-xl md:text-2xl text-center">
+            <Card className="glass-form border-sleek-green/30 hover:border-sleek-green/60 transition-all duration-500 hover:glow-green">
+              <CardHeader className="bg-gradient-to-r from-sleek-green via-sleek-green-dark to-sleek-charcoal text-white rounded-t-2xl p-8">
+                <CardTitle className="text-xl md:text-2xl text-center font-bold tracking-wide">
                   Close more roofing jobs by filling this out now!
                 </CardTitle>
               </CardHeader>
-              <CardContent className="p-6" id="contact-form">
-                <form className="space-y-4">
+              <CardContent className="p-8" id="contact-form">
+                <form className="space-y-6">
                   <div>
-                    <Label htmlFor="businessName">Business Name</Label>
+                    <Label htmlFor="businessName" className="text-foreground mb-2 block font-medium">Business Name</Label>
                     <Input 
                       id="businessName" 
                       placeholder="Enter your business name"
-                      className="mt-1"
+                      className="glass-card border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="fullName">Full Name</Label>
+                    <Label htmlFor="fullName" className="text-foreground mb-2 block font-medium">Full Name</Label>
                     <Input 
                       id="fullName" 
                       placeholder="Enter your full name"
-                      className="mt-1"
+                      className="glass-card border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email" className="text-foreground mb-2 block font-medium">Email</Label>
                     <Input 
                       id="email" 
                       type="email" 
                       placeholder="Enter your email address"
-                      className="mt-1"
+                      className="glass-card border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
                     />
                   </div>
                   <div>
-                    <Label htmlFor="phone">Phone</Label>
+                    <Label htmlFor="phone" className="text-foreground mb-2 block font-medium">Phone</Label>
                     <Input 
                       id="phone" 
                       type="tel" 
                       placeholder="Enter your phone number"
-                      className="mt-1"
+                      className="glass-card border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
                     />
                   </div>
                   <Button 
                     type="submit" 
-                    variant="cta" 
+                    variant="gradient" 
                     size="lg" 
-                    className="w-full mt-6"
+                    className="w-full mt-8 py-4 text-lg font-semibold"
                   >
                     Submit
                   </Button>

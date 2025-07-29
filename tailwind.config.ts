@@ -57,12 +57,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				roofing: {
-					blue: 'hsl(var(--roofing-blue))',
-					'blue-dark': 'hsl(var(--roofing-blue-dark))',
-					orange: 'hsl(var(--roofing-orange))',
-					gray: 'hsl(var(--roofing-gray))',
-					'light-gray': 'hsl(var(--roofing-light-gray))'
+				sleek: {
+					charcoal: 'hsl(var(--charcoal))',
+					'charcoal-light': 'hsl(var(--charcoal-light))',
+					'charcoal-lighter': 'hsl(var(--charcoal-lighter))',
+					green: 'hsl(var(--green-primary))',
+					'green-bright': 'hsl(var(--green-bright))',
+					'green-dark': 'hsl(var(--green-dark))',
+					'glass-bg': 'hsl(var(--glass-bg))',
+					'glass-border': 'hsl(var(--glass-border))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

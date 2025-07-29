@@ -9,18 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-lg",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-gradient-to-r from-roofing-orange to-orange-500 text-white hover:shadow-lg hover:scale-105 shadow-md",
-        hero: "bg-gradient-to-r from-roofing-blue to-roofing-blue-dark text-white hover:shadow-xl hover:scale-105 shadow-lg",
-        warning: "bg-warning text-warning-foreground hover:bg-warning/90",
+        glass: "glass-card text-foreground hover:bg-sleek-charcoal-light hover:shadow-lg transition-all duration-300",
+        gradient: "bg-gradient-to-r from-sleek-green to-sleek-green-dark text-white hover:from-sleek-green-bright hover:to-sleek-green glow-green hover:scale-105",
+        premium: "glass-form text-foreground border-sleek-green/30 hover:border-sleek-green/60 hover:glow-green transition-all duration-400",
       },
       size: {
         default: "h-10 px-4 py-2",
