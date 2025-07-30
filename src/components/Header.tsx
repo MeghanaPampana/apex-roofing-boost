@@ -4,17 +4,8 @@ const Header = () => {
   return (
     <header className="glass-card border-b border-sleek-charcoal-lighter">
       <div className="max-w-7xl mx-auto px-4 py-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <div className="p-3 rounded-xl bg-gradient-to-br from-sleek-green to-sleek-green-dark glow-green">
-              <img 
-                src={roofingLogo} 
-                alt="Roofing Company Logo" 
-                className="h-12 w-12 filter brightness-0 invert"
-              />
-            </div>
-          </div>
-          <div className="flex-1 max-w-2xl ml-6">
+        <div className="flex justify-center">
+          <div className="max-w-3xl text-center">
             <h1 className="text-xl md:text-2xl font-bold text-sleek-green mb-2 tracking-tight">
               High Quality, EXCLUSIVE Roofing Appointments
             </h1>
