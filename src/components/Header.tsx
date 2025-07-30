@@ -16,12 +16,12 @@ const Header = () => {
           </div>
           <div className="flex-1 max-w-2xl ml-6">
             <h1 className="text-xl md:text-2xl font-bold text-sleek-green mb-2 tracking-tight">
-              Top-Shelf Roofing Appointments!
+              High Quality, EXCLUSIVE Roofing Appointments
             </h1>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              No shared leads here—every client is primed and ready to buy. 
-              Homeowners are seeking quality over mere bargain deals. 
-              Fill out the form below pronto to unveil what we bring to the table and how our magic unfolds!
+              No shared leads. Ready to buy. Homeowners looking for the best, not the cheapest.
+              <br />
+              Fill out the form below right now to learn exactly what we do and how it works!
             </p>
           </div>
         </div>
