@@ -8,9 +8,20 @@ const Navigation = () => {
   
   const isActive = (path: string) => location.pathname === path;
   
+  const scrollToTestimonials = () => {
+    if (location.pathname !== "/") {
+      // If not on home page, navigate to home first
+      window.location.href = "/#testimonials";
+    } else {
+      // If on home page, scroll to testimonials
+      const element = document.getElementById("testimonials");
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Testimonials", path: "/testimonials" },
+    { name: "Testimonials", action: scrollToTestimonials },
     { name: "About Us", path: "/about" },
     { name: "Our Services", path: "/services" },
     { name: "FAQs", path: "/faqs" }
@@ -34,17 +45,27 @@ const Navigation = () => {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`text-sm font-medium transition-colors duration-300 ${
-                  isActive(item.path)
-                    ? "text-sleek-green"
-                    : "text-foreground hover:text-sleek-green"
-                }`}
-              >
-                {item.name}
-              </Link>
+              item.path ? (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`text-sm font-medium transition-colors duration-300 ${
+                    isActive(item.path)
+                      ? "text-sleek-green"
+                      : "text-foreground hover:text-sleek-green"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <button
+                  key={item.name}
+                  onClick={item.action}
+                  className="text-sm font-medium transition-colors duration-300 text-foreground hover:text-sleek-green"
+                >
+                  {item.name}
+                </button>
+              )
             ))}
           </div>
 
