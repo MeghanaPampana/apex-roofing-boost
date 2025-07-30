@@ -90,6 +90,13 @@ const HeroSection = () => {
                   >
                     Submit
                   </Button>
+                  <Button 
+                    variant="premium" 
+                    size="lg" 
+                    className="w-full mt-4 py-4 text-lg font-semibold"
+                  >
+                    Book a 15-Mins Call
+                  </Button>
                 </form>
               </CardContent>
             </Card>

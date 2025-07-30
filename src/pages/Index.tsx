@@ -1,32 +1,23 @@
 import TopBanner from "@/components/TopBanner";
+import Navigation from "@/components/Navigation";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import TestimonialsGrid from "@/components/TestimonialsGrid";
 import DisclaimerSection from "@/components/DisclaimerSection";
 import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Page 1 */}
       <TopBanner />
+      <Navigation />
       <Header />
       <HeroSection />
-      
-      {/* Page 2 */}
-      <TestimonialsSection pageNumber={2} />
-      
-      {/* Page 3 */}
-      <TestimonialsSection pageNumber={3} />
-      
-      {/* Page 4 */}
-      <TestimonialsSection pageNumber={4} />
-      
-      {/* Page 5 */}
+      <TestimonialsGrid />
       <DisclaimerSection />
-      
-      {/* Page 6 */}
       <ContactSection />
+      <Footer />
     </div>
   );
 };

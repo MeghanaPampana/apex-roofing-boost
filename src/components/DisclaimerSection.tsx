@@ -12,52 +12,29 @@ const DisclaimerSection = () => {
           Our Honest Disclaimer
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="max-w-4xl mx-auto mb-12">
           <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green">
-            <CardHeader className="text-center p-8">
-              <div className="p-4 rounded-2xl bg-gradient-to-br from-sleek-green to-sleek-green-dark glow-green mx-auto w-fit mb-6">
-                <Shield className="h-10 w-10 text-white" />
+            <CardContent className="p-8">
+              <div className="space-y-6 text-foreground leading-relaxed">
+                <p>
+                  Let's keep it real: Hera Digital Media has zero affiliation with Facebook. We simply know how to leverage their platform to line up quality appointments for roofing contractors who are hungry for growth.
+                </p>
+                <p>
+                  Those stellar testimonials you see? Genuine. And here's our commitment to you—we stand behind our work with a rock-solid guarantee. Depending on the ad spend you commit to, we guarantee a certain number of appointments. If we don't deliver at least that many, we'll work for free until we do. No excuses.
+                </p>
+                <p>
+                  But here's the truth: Getting a flood of appointments is just one piece of the puzzle. Closing the deal? That's on you. Sometimes, clients get a boatload of opportunities but stumble when it's time to seal them. Success takes grit, persistence, and a relentless commitment to the process.
+                </p>
+                <p>
+                  We won't promise you the moon. What we do promise is our unwavering dedication to setting you up with the opportunities you need to succeed. We're in this together, and we're putting our money where our mouth is.
+                </p>
+                <p className="font-semibold">
+                  No sugarcoating, no fluff—just straight talk and real results. If you're ready to roll up your sleeves and work alongside a team that's as committed to your success as you are, let's make it happen.
+                </p>
+                <p className="text-sleek-green font-bold text-lg text-center">
+                  Are you ready?
+                </p>
               </div>
-              <CardTitle className="text-xl text-sleek-green font-bold">
-                Quality Guarantee
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="px-8 pb-8">
-              <p className="text-muted-foreground text-center leading-relaxed">
-                [Content to be edited - Quality assurance and warranty information will be added here]
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="glass-card border-sleek-charcoal-lighter hover:border-warning/50 transition-all duration-500 hover:shadow-lg hover:shadow-warning/20">
-            <CardHeader className="text-center p-8">
-              <div className="p-4 rounded-2xl bg-gradient-to-br from-warning to-orange-600 shadow-lg shadow-warning/30 mx-auto w-fit mb-6">
-                <AlertTriangle className="h-10 w-10 text-white" />
-              </div>
-              <CardTitle className="text-xl text-sleek-green font-bold">
-                Important Terms
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="px-8 pb-8">
-              <p className="text-muted-foreground text-center leading-relaxed">
-                [Content to be edited - Important terms and conditions will be detailed here]
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green">
-            <CardHeader className="text-center p-8">
-              <div className="p-4 rounded-2xl bg-gradient-to-br from-sleek-green to-sleek-green-dark glow-green mx-auto w-fit mb-6">
-                <FileText className="h-10 w-10 text-white" />
-              </div>
-              <CardTitle className="text-xl text-sleek-green font-bold">
-                Legal Notice
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="px-8 pb-8">
-              <p className="text-muted-foreground text-center leading-relaxed">
-                [Content to be edited - Legal disclaimers and liability information will go here]
-              </p>
             </CardContent>
           </Card>
         </div>
