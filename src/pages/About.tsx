@@ -14,10 +14,10 @@ const About = () => {
         
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-sleek-green mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-sleek-green mb-6 tracking-tight text-left">
               About Hera Digital Media
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground text-left">
               We Bring You Leads. You Focus on the Work You Love.
             </p>
           </div>

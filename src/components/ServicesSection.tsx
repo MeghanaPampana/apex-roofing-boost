@@ -4,48 +4,53 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const ServicesSection = () => {
   const services = [
     {
-      title: "Service 1",
-      subtitle: "Subtitle for service 1",
+      title: "Lead Generation (Done-for-You)",
+      subtitle: "We deliver real, ready-to-buy roofing leads — straight to your phone or inbox.",
       bullets: [
-        "Bullet point 1",
-        "Bullet point 2", 
-        "Bullet point 3"
+        "Exclusive homeowner leads (no sharing with competitors)",
+        "Targeted by zip code, service type, and homeowner intent", 
+        "Verified contact info (phone, email, address)",
+        "Real-time lead delivery"
       ]
     },
     {
-      title: "Service 2", 
-      subtitle: "Subtitle for service 2",
+      title: "Appointment Setting ", 
+      subtitle: "We don’t just send leads — we book appointments on your calendar.",
       bullets: [
-        "Bullet point 1",
-        "Bullet point 2",
-        "Bullet point 3"
+        "Lead nurturing via call/text/email",
+        "Calendar integration (Google/Outlook/etc.)",
+        "AI Hybrid Appointment Systems",
+        "Only pay for qualified appointments"
       ]
     },
     {
-      title: "Service 3",
-      subtitle: "Subtitle for service 3", 
+      title: "Paid Ad Campaigns (Meta & Google Ads)",
+      subtitle: "We run proven ad campaigns that attract high-intent homeowners.", 
       bullets: [
-        "Bullet point 1",
-        "Bullet point 2",
-        "Bullet point 3"
+        "Facebook/Instagram Lead Forms",
+        "Google Search Ads for \"roof repair near me\"",
+        "Landing pages optimized for conversions",
+        "Local radius targeting & A/B testing"
       ]
     },
     {
-      title: "Service 4",
-      subtitle: "Subtitle for service 4",
+      title: "Local SEO & Google Business Profile Management",
+      subtitle: "Get found when people search \"roofing contractor near me.\"",
       bullets: [
-        "Bullet point 1", 
-        "Bullet point 2",
-        "Bullet point 3"
+        "Google Business Profile management", 
+        "Review generation & response system",
+        "Website SEO for your service area",
+        "Monthly performance reports"
       ]
     },
     {
-      title: "Service 5",
-      subtitle: "Subtitle for service 5",
+      title: "CRM & Automation Setup",
+      subtitle: "Track every lead and never miss a follow-up.",
       bullets: [
-        "Bullet point 1",
-        "Bullet point 2",
-        "Bullet point 3"
+        "CRM setup (we use your preferred tool)",
+        "Automated follow-up sequences (text, email, voicemail drops)",
+        "Pipeline tracking and lead scoring",
+        "Call tracking & performance analytics"
       ]
     }
   ];
@@ -59,9 +64,9 @@ const ServicesSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-sleek-green mb-6 tracking-tight">
             Our Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Comprehensive digital marketing solutions designed specifically for roofing and home improvement contractors.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

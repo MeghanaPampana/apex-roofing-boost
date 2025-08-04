@@ -37,9 +37,9 @@ const Footer = () => {
                 Hera Digital Media
               </span>
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed">
+            {/* <p className="text-muted-foreground text-sm leading-relaxed">
               Helping contractors grow their businesses with qualified leads and booked appointments.
-            </p>
+            </p> */}
           </div>
 
           {/* Navigation */}
@@ -61,7 +61,7 @@ const Footer = () => {
 
           {/* Social Media */}
           <div>
-            <h4 className="text-sleek-green font-semibold mb-6">Follow Us</h4>
+            <h4 className="text-sleek-green font-semibold mb-6">Socials</h4>
             <div className="flex flex-col gap-3">
               {socialLinks.map((social) => (
                 <a 
@@ -82,15 +82,10 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center text-muted-foreground text-sm">
                 <Mail className="h-4 w-4 mr-3" />
-                support@heradigital.com
-              </div>
-              <div className="flex items-center text-muted-foreground text-sm">
-                <Phone className="h-4 w-4 mr-3" />
-                24/7 Seamless Support
-              </div>
-              <p className="text-muted-foreground text-sm">Secure and Safe</p>
+                contact@heradigitalmedia.com
+              </div>              
               <Button variant="gradient" size="sm" className="mt-4">
-                Schedule a Call with Us
+                Schedule a Call with us
               </Button>
             </div>
           </div>
@@ -99,7 +94,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-sleek-charcoal-lighter pt-8">
           <p className="text-center text-muted-foreground text-sm">
-            © 2025 Hera Digital Media. All Rights Reserved
+            © 2025 Hera Digital Media. All Rights Reserved. Designed by Illuminavtion
           </p>
         </div>
       </div>

@@ -9,10 +9,10 @@ const AboutSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-sleek-green mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-sleek-green mb-6 tracking-tight text-left">
             About Hera Digital Media
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-muted-foreground text-left">
             We Bring You Leads. You Focus on the Work You Love.
           </p>
         </div>
@@ -23,7 +23,7 @@ const AboutSection = () => {
               At Hera Digital Media, we specialize in helping roofers and home improvement contractors across the US grow their businesses with qualified leads and booked appointments — no fluff, no shared leads, no wasted time.
             </p>
             <p className="text-lg text-foreground leading-relaxed">
-              We've been in the game for over 2 years, working exclusively with contractors in the United States, and we understand exactly what it takes to fill your pipeline with real homeowners who need your services now.
+              We’ve been in the game for over 2 years, working exclusively with contractors in the United States, and we understand exactly what it takes to fill your pipeline with real homeowners who need your services now.
             </p>
           </div>
           
@@ -48,27 +48,19 @@ const AboutSection = () => {
               <ul className="space-y-4 text-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Residential and Commercial Roofers
+                  Roofing Contractors
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  General Contractors
+                  Remodeling and Solar Companies
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  HVAC Companies
+                  Painters, Siding, Window & Gutter Installers
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Solar Installation Companies
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Siding & Window Companies
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Other Home Improvement Contractors
+                  HVAC, Plumbing, and General Home Improvement Pros
                 </li>
               </ul>
             </CardContent>
@@ -82,24 +74,20 @@ const AboutSection = () => {
               <ul className="space-y-4 text-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <strong>Exclusive Leads:</strong> You're the only contractor receiving these leads
+                  Exclusive Leads Only – No sharing with competitors
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <strong>Qualified Prospects:</strong> We pre-qualify leads so you talk to serious buyers
+                  Appointments Booked For You – We follow up so you don’t have to
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <strong>USA-Only Focus:</strong> We work exclusively with US contractors
+                  USA Only – Hyper-focused on local markets across the States
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <strong>2+ Years Experience:</strong> Proven track record in contractor lead generation
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <strong>No Time Wasting:</strong> Ready-to-book homeowners, not tire kickers
-                </li>
+                  2+ Years of Results – Trusted by contractors nationwide
+                </li>              
               </ul>
             </CardContent>
           </Card>
