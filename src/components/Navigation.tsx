@@ -23,10 +23,10 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Testimonials", action: scrollToTestimonials },
-    { name: "Disclaimer", path: "/disclaimer" },
-    { name: "About Hera Digital Media", path: "/about" },
+    // { name: "Disclaimer", path: "/disclaimer" },
+    { name: "About us", path: "/about" },
     { name: "Our Services", path: "/services" },
-    { name: "Ready to Book Appointment", path: "/book-appointment" },
+    // { name: "Ready to Book Appointment", path: "/book-appointment" },
     { name: "FAQs", path: "/faqs" }
   ];
 
