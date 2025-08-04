@@ -46,13 +46,13 @@ const Navigation = () => {
           </Link>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 flex-1 justify-center">
             {navItems.map((item) => (
               item.path ? (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-sm font-medium transition-colors duration-300 ${
+                  className={`text-sm font-medium transition-colors duration-300 whitespace-nowrap ${
                     isActive(item.path)
                       ? "text-sleek-green"
                       : "text-foreground hover:text-sleek-green"
@@ -64,7 +64,7 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={item.action}
-                  className="text-sm font-medium transition-colors duration-300 text-foreground hover:text-sleek-green"
+                  className="text-sm font-medium transition-colors duration-300 text-foreground hover:text-sleek-green whitespace-nowrap"
                 >
                   {item.name}
                 </button>
@@ -73,7 +73,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="glass" size="icon">
@@ -127,7 +127,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Social Media Icons */}
-          <div className="hidden md:flex flex-col gap-2">
+          <div className="hidden lg:flex flex-col gap-2">
             <Button variant="glass" size="icon" className="h-8 w-8">
               <Facebook className="h-4 w-4" />
             </Button>
