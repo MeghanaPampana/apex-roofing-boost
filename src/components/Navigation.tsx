@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Facebook, Instagram, Linkedin, Youtube, Menu } from "lucide-react";
 import roofingLogo from "@/assets/roofing-logo.png";
 
 const Navigation = () => {
@@ -69,8 +70,62 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Social Media Icons */}
-          <div className="flex flex-col gap-2">
+          {/* Mobile Navigation */}
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="glass" size="icon">
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <div className="flex flex-col space-y-4 mt-8">
+                  {navItems.map((item) => (
+                    item.path ? (
+                      <Link
+                        key={item.name}
+                        to={item.path}
+                        className={`text-lg font-medium transition-colors duration-300 ${
+                          isActive(item.path)
+                            ? "text-sleek-green"
+                            : "text-foreground hover:text-sleek-green"
+                        }`}
+                      >
+                        {item.name}
+                      </Link>
+                    ) : (
+                      <button
+                        key={item.name}
+                        onClick={item.action}
+                        className="text-lg font-medium transition-colors duration-300 text-foreground hover:text-sleek-green text-left"
+                      >
+                        {item.name}
+                      </button>
+                    )
+                  ))}
+                  
+                  {/* Social Media Icons in Mobile */}
+                  <div className="flex gap-4 mt-8">
+                    <Button variant="glass" size="icon" className="h-10 w-10">
+                      <Facebook className="h-5 w-5" />
+                    </Button>
+                    <Button variant="glass" size="icon" className="h-10 w-10">
+                      <Instagram className="h-5 w-5" />
+                    </Button>
+                    <Button variant="glass" size="icon" className="h-10 w-10">
+                      <Linkedin className="h-5 w-5" />
+                    </Button>
+                    <Button variant="glass" size="icon" className="h-10 w-10">
+                      <Youtube className="h-5 w-5" />
+                    </Button>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+
+          {/* Desktop Social Media Icons */}
+          <div className="hidden md:flex flex-col gap-2">
             <Button variant="glass" size="icon" className="h-8 w-8">
               <Facebook className="h-4 w-4" />
             </Button>
