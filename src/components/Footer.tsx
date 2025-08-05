@@ -20,8 +20,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-sleek-charcoal border-t border-sleek-charcoal-lighter">
-      <div className="max-w-7xl mx-auto px-4 py-16">
+    <footer className="relative border-t border-sleek-charcoal-lighter">
+      <div className="absolute inset-0 bg-gradient-radial from-sleek-green/20 via-sleek-charcoal/80 to-sleek-charcoal"></div>
+      <div className="max-w-7xl mx-auto px-4 py-16 relative z-10">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Company */}
           <div>

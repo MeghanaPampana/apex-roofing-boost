@@ -55,6 +55,7 @@ All colors MUST be HSL.
     --gradient-section: linear-gradient(180deg, hsl(var(--charcoal)) 0%, hsl(var(--charcoal-light)) 50%, hsl(var(--charcoal)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--charcoal-light)) 0%, hsl(var(--charcoal)) 100%);
     --gradient-green-to-black: linear-gradient(135deg, hsl(var(--green-primary)), hsl(var(--green-dark)), hsl(var(--charcoal)));
+    --gradient-radial: radial-gradient(circle at center, var(--green-primary), var(--charcoal));
     
     /* Glassmorphism effects */
     --glass-light: hsla(100, 100%, 8%, 0.8);
@@ -199,5 +200,13 @@ All colors MUST be HSL.
 
   .glow-green {
     box-shadow: var(--shadow-green-glow);
+  }
+
+  .bg-button-dark {
+    background-color: #062B00;
+  }
+
+  .bg-gradient-radial {
+    background: var(--gradient-radial);
   }
 }
