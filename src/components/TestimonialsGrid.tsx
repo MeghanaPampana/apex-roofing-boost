@@ -68,7 +68,7 @@ const TestimonialsGrid = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(var(--green-primary))_0%,_transparent_70%)] opacity-10"></div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-left mb-16 text-sleek-green tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-left mb-16 text-white tracking-tight">
           Testimonials
         </h2>
         

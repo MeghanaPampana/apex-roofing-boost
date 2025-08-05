@@ -9,7 +9,7 @@ const DisclaimerSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-sleek-charcoal via-sleek-green/10 to-sleek-charcoal"></div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-sleek-green tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white tracking-tight">
           Our Honest Disclaimer
         </h2>
         
@@ -33,7 +33,7 @@ const DisclaimerSection = () => {
                 <p className="font-semibold">
                   No sugarcoating, no fluff—just straight talk and real results. If you're ready to roll up your sleeves and work alongside a team that's as committed to your success as you are, let's make it happen.
                 </p>
-                <p className="text-sleek-green font-bold text-lg text-left">
+                <p className="text-white font-bold text-lg text-left">
                   Are you ready? &emsp;              
                   <Button 
                     variant="gradient" 

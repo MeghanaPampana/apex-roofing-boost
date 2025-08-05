@@ -34,7 +34,7 @@ const Footer = () => {
                   className="h-8 w-8 filter brightness-0 invert"
                 />
               </div>
-              <span className="ml-3 text-lg font-bold text-sleek-green">
+              <span className="ml-3 text-lg font-bold text-white">
                 Hera Digital Media
               </span>
             </div>
@@ -45,13 +45,13 @@ const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <h4 className="text-sleek-green font-semibold mb-6">Navigation</h4>
+            <h4 className="text-white font-semibold mb-6">Navigation</h4>
             <ul className="space-y-3">
               {navigationLinks.map((link) => (
                 <li key={link.name}>
                   <Link 
                     to={link.path}
-                    className="text-muted-foreground hover:text-sleek-green transition-colors text-sm"
+                    className="text-muted-foreground hover:text-white transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -62,13 +62,13 @@ const Footer = () => {
 
           {/* Social Media */}
           <div>
-            <h4 className="text-sleek-green font-semibold mb-6">Socials</h4>
+            <h4 className="text-white font-semibold mb-6">Socials</h4>
             <div className="flex flex-col gap-3">
               {socialLinks.map((social) => (
                 <a 
                   key={social.label}
                   href="#"
-                  className="flex items-center text-muted-foreground hover:text-sleek-green transition-colors text-sm"
+                  className="flex items-center text-muted-foreground hover:text-white transition-colors text-sm"
                 >
                   <social.icon className="h-4 w-4 mr-3" />
                   {social.label}
@@ -79,7 +79,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sleek-green font-semibold mb-6">Write to Us</h4>
+            <h4 className="text-white font-semibold mb-6">Write to Us</h4>
             <div className="space-y-4">
               <div className="flex items-center text-muted-foreground text-sm">
                 <Mail className="h-4 w-4 mr-3" />

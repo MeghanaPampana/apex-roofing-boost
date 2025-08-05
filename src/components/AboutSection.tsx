@@ -9,10 +9,10 @@ const AboutSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-sleek-green mb-6 tracking-tight text-left">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight text-left">
             About Hera Digital Media
           </h2>
-          <p className="text-xl text-muted-foreground text-left">
+          <p className="text-xl text-white text-left">
             We Bring You Leads. You Focus on the Work You Love.
           </p>
         </div>
@@ -29,7 +29,7 @@ const AboutSection = () => {
           
           <Card className="glass-form border-sleek-green/30 hover:border-sleek-green/60 transition-all duration-500 hover:glow-green">
             <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold text-sleek-green mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">
                 Let's turn your slow days into booked weeks.
               </h3>
               <Button variant="gradient" size="lg" className="px-8 py-3">
@@ -42,7 +42,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-sleek-green mb-6">
+              <h3 className="text-2xl font-bold text-white mb-6">
                 Who do We Work With?
               </h3>
               <ul className="space-y-4 text-foreground">
@@ -68,7 +68,7 @@ const AboutSection = () => {
 
           <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-sleek-green mb-6">
+              <h3 className="text-2xl font-bold text-white mb-6">
                 Why Choose Hera?
               </h3>
               <ul className="space-y-4 text-foreground">

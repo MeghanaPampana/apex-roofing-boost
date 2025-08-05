@@ -64,7 +64,7 @@ const FAQsSection = () => {
       
       <div className="max-w-4xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-sleek-green mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
             FAQs
           </h2>
           {/* <p className="text-xl text-muted-foreground">
@@ -79,7 +79,7 @@ const FAQsSection = () => {
               value={`item-${index}`} 
               className="border-sleek-charcoal-lighter last:border-b-0"
             >
-              <AccordionTrigger className="text-left hover:text-sleek-green transition-colors">
+              <AccordionTrigger className="text-left hover:text-white transition-colors">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground leading-relaxed">
