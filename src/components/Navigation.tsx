@@ -32,7 +32,7 @@ const Navigation = () => {
 
   return (
     <nav className="floating-nav border border-white/20 relative z-40">
-      <div className="max-w-7xl mx-auto px-4 py-4">
+      <div className="max-w-7xl mx-auto px-2 py-2">
         <div className="flex items-center justify-between">
           {/* Logo moved next to nav items */}
           <div className="flex items-center gap-8">
