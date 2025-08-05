@@ -136,21 +136,65 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     background: var(--gradient-section);
+    padding-top: 60px; /* Account for fixed top banner */
   }
 
   /* Glassmorphism utility classes */
   .glass-card {
-    background: var(--glass-medium);
+    background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(255,255,255,0.1));
     backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
-    box-shadow: var(--shadow-glass);
+    box-shadow: var(--shadow-glass), 0 0 20px rgba(255,255,255,0.1) inset;
+    position: relative;
+  }
+
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
+    opacity: 0.3;
   }
 
   .glass-form {
-    background: var(--glass-dark);
+    background: linear-gradient(135deg, rgba(0,0,0,0.95), rgba(255,255,255,0.05));
     backdrop-filter: blur(24px);
     border: 1px solid var(--glass-border);
-    box-shadow: var(--shadow-glass);
+    box-shadow: var(--shadow-glass), 0 0 30px rgba(255,255,255,0.1) inset;
+    position: relative;
+  }
+
+  .glass-form::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+    background-size: 15px 15px;
+    pointer-events: none;
+    opacity: 0.2;
+  }
+
+  .glass-input {
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(255,255,255,0.1));
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 0 15px rgba(255,255,255,0.1) inset;
+    position: relative;
+  }
+
+  .glass-input::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0);
+    background-size: 10px 10px;
+    pointer-events: none;
+    opacity: 0.4;
   }
 
   .glow-green {

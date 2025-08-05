@@ -50,48 +50,47 @@ const HeroSection = () => {
                 <form className="space-y-6">
                   <div>
                     {/* <Label htmlFor="businessName" className="text-foreground mb-2 block font-medium">Business Name</Label> */}
-                    <Input 
-                      id="businessName" 
-                      placeholder="Business Name*"
-                      className="glass-card border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
-                      required
-                    />
+                     <Input 
+                       id="businessName" 
+                       placeholder="Business Name*"
+                       className="glass-input border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
+                       required
+                     />
                   </div>
                   <div>
                     {/* <Label htmlFor="fullName" className="text-foreground mb-2 block font-medium">Full Name</Label> */}
-                    <Input 
-                      id="fullName" 
-                      placeholder="Your Full Name*"
-                      className="glass-card border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
-                      required
-                    />
+                     <Input 
+                       id="fullName" 
+                       placeholder="Your Full Name*"
+                       className="glass-input border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
+                       required
+                     />
                   </div>
                   <div>
                     {/* <Label htmlFor="email" className="text-foreground mb-2 block font-medium">Email</Label> */}
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="E-mail*"
-                      className="glass-card border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
-                      required
-                    />
+                     <Input 
+                       id="email" 
+                       type="email" 
+                       placeholder="E-mail*"
+                       className="glass-input border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
+                       required
+                     />
                   </div>
                   <div>
                     {/* <Label htmlFor="phone" className="text-foreground mb-2 block font-medium">Phone</Label> */}
-                    <Input 
-                      id="phone" 
-                      type="tel" 
-                      placeholder="Phone*"
-                      className="glass-card border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
-                      required
-                    />
+                     <Input 
+                       id="phone" 
+                       type="tel" 
+                       placeholder="Phone*"
+                       className="glass-input border-sleek-charcoal-lighter focus:border-sleek-green focus:glow-green transition-all duration-300"
+                       required
+                     />
                   </div>
-                  <Button 
-                    type="submit" 
-                    variant="gradient" 
-                    size="lg" 
-                    className="w-full mt-8 py-4 text-lg font-semibold"
-                  >
+                   <Button 
+                     type="submit" 
+                     variant="gradient" 
+                     className="w-full mt-8 py-6 text-xl font-semibold h-auto"
+                   >
                   <span>LET'S DO THIS
                   <br />
                   30 GUARANTEED APPOINTMENTS</span>

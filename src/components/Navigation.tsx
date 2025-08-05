@@ -31,22 +31,23 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="glass-card border-b border-sleek-charcoal-lighter relative z-50">
+    <nav className="glass-card border-b border-sleek-charcoal-lighter relative z-40">
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <div className="p-2 rounded-xl bg-gradient-to-br from-sleek-green to-sleek-green-dark glow-green">
-              <img 
-                src={roofingLogo} 
-                alt="Hera Digital Media Logo" 
-                className="h-10 w-10 filter brightness-0 invert"
-              />
-            </div>
-          </Link>
+          {/* Logo moved next to nav items */}
+          <div className="flex items-center gap-8">
+            <Link to="/" className="flex items-center">
+              <div className="p-3 rounded-xl bg-gradient-to-br from-sleek-green to-sleek-green-dark glow-green">
+                <img 
+                  src={roofingLogo} 
+                  alt="Hera Digital Media Logo" 
+                  className="h-12 w-12 filter brightness-0 invert"
+                />
+              </div>
+            </Link>
 
-          {/* Navigation Links */}
-          <div className="hidden lg:flex items-center space-x-6 flex-1 justify-center">
+            {/* Navigation Links */}
+            <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               item.path ? (
                 <Link
@@ -70,6 +71,7 @@ const Navigation = () => {
                 </button>
               )
             ))}
+            </div>
           </div>
 
           {/* Mobile Navigation */}
@@ -128,16 +130,16 @@ const Navigation = () => {
 
           {/* Desktop Social Media Icons */}
           <div className="hidden lg:flex flex-col gap-2">
-            <Button variant="glass" size="icon" className="h-8 w-8">
+            <Button variant="default" size="icon" className="h-8 w-8 bg-sleek-green hover:bg-sleek-green-bright">
               <Facebook className="h-4 w-4" />
             </Button>
-            <Button variant="glass" size="icon" className="h-8 w-8">
+            <Button variant="default" size="icon" className="h-8 w-8 bg-sleek-green hover:bg-sleek-green-bright">
               <Instagram className="h-4 w-4" />
             </Button>
-            <Button variant="glass" size="icon" className="h-8 w-8">
+            <Button variant="default" size="icon" className="h-8 w-8 bg-sleek-green hover:bg-sleek-green-bright">
               <Linkedin className="h-4 w-4" />
             </Button>
-            <Button variant="glass" size="icon" className="h-8 w-8">
+            <Button variant="default" size="icon" className="h-8 w-8 bg-sleek-green hover:bg-sleek-green-bright">
               <Youtube className="h-4 w-4" />
             </Button>
           </div>
