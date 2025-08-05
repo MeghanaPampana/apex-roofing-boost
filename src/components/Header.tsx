@@ -2,7 +2,7 @@ import roofingLogo from "@/assets/roofing-logo.png";
 
 const Header = () => {
   return (
-    <header className="glass-card border-b border-sleek-charcoal-lighter">
+    <header className="bg-black border-b border-sleek-charcoal-lighter">
       <div className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex justify-center">
           <div className="max-w-3xl text-center">

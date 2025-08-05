@@ -209,4 +209,30 @@ All colors MUST be HSL.
   .bg-gradient-radial {
     background: var(--gradient-radial);
   }
+
+  .floating-nav {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(255,255,255,1) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 20px rgba(255,255,255,0.1) inset;
+    z-index: 1000;
+  }
+
+  .floating-nav::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+    background-size: 15px 15px;
+    pointer-events: none;
+    opacity: 0.3;
+    border-radius: 20px;
+  }
 }
