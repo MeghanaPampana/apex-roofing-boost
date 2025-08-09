@@ -13,10 +13,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, label: "Facebook" },
-    { icon: Instagram, label: "Instagram" },
-    { icon: Linkedin, label: "LinkedIn" },
-    { icon: Youtube, label: "YouTube" }
+    { icon: Facebook, label: "Facebook", url: "https://www.facebook.com/manojkheradigitalmedia/"},
+    { icon: Instagram, label: "Instagram", url: "https://www.instagram.com/hera.digital.media/?hl=en" },
+    { icon: Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/company/hera-digital-media"},
+    { icon: Youtube, label: "YouTube", url: "https://www.youtube.com/@ManojK_HeraDigitalMedia" }
   ];
 
   return (
@@ -67,7 +67,9 @@ const Footer = () => {
               {socialLinks.map((social) => (
                 <a 
                   key={social.label}
-                  href="#"
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center text-muted-foreground hover:text-white transition-colors text-sm"
                 >
                   <social.icon className="h-4 w-4 mr-3" />
@@ -83,7 +85,12 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center text-muted-foreground text-sm">
                 <Mail className="h-4 w-4 mr-3" />
-                contact@heradigitalmedia.com
+                  <a 
+                    href="mailto:contact@heradigitalmedia.com" 
+                    className="hover:underline"
+                  >
+                  contact@heradigitalmedia.com
+                  </a>
               </div>              
               <Button variant="gradient" size="sm" className="mt-4">
                 Schedule a Call with us

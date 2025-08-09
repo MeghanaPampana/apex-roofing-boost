@@ -27,9 +27,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="relative z-40">
+    <nav className="relative z-40"> 
       <div className="max-w-7xl mx-auto px-2 py-2">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between w-full">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <div className="p-3 rounded-xl bg-gradient-to-br from-sleek-green to-sleek-green-dark glow-green">
@@ -42,7 +42,7 @@ const Navigation = () => {
           </Link>
 
           {/* Nav Buttons with background */}
-          <div className="hidden lg:flex items-center">
+          <div className="hidden lg:flex items-center flex-1 justify-center">
             <div className="border border-white/20 rounded-xl px-4 py-2 space-x-6 backdrop-blur flex items-center">
               {navItems.map((item) =>
                 item.path ? (
@@ -106,18 +106,26 @@ const Navigation = () => {
 
                   {/* Social Media Icons in Mobile */}
                   <div className="flex gap-4 mt-8">
+                    <a href="https://www.facebook.com/manojkheradigitalmedia/" target="_blank">
                     <Button variant="glass" size="icon" className="h-10 w-10">
                       <Facebook className="h-5 w-5" />
                     </Button>
+                    </a>
+                    <a href="https://www.instagram.com/hera.digital.media/?hl=en" target="_blank" rel="noopener noreferrer">
                     <Button variant="glass" size="icon" className="h-10 w-10">
                       <Instagram className="h-5 w-5" />
                     </Button>
+                    </a>
+                    <a href="https://www.linkedin.com/company/hera-digital-media" target="_blank" rel="noopener noreferrer">
                     <Button variant="glass" size="icon" className="h-10 w-10">
                       <Linkedin className="h-5 w-5" />
                     </Button>
+                    </a>
+                    <a href="https://www.youtube.com/@ManojK_HeraDigitalMedia" target="_blank" rel="noopener noreferrer">
                     <Button variant="glass" size="icon" className="h-10 w-10">
                       <Youtube className="h-5 w-5" />
                     </Button>
+                    </a>
                   </div>
                 </div>
               </SheetContent>
@@ -125,7 +133,8 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Social Media Icons */}
-          <div className="hidden lg:flex flex-col gap-2">
+          <div className="hidden lg:flex flex-col gap-2 items-end">
+            <a href="https://www.facebook.com/profile.php?id=100006780394281" target="_blank" rel="noopener noreferrer">
             <Button
               variant="default"
               size="icon"
@@ -133,6 +142,8 @@ const Navigation = () => {
             >
               <Facebook className="h-4 w-4" />
             </Button>
+            </a>
+            <a href="https://www.instagram.com/hera.digital.media/?hl=en" target="_blank" rel="noopener noreferrer">
             <Button
               variant="default"
               size="icon"
@@ -140,6 +151,8 @@ const Navigation = () => {
             >
               <Instagram className="h-4 w-4" />
             </Button>
+            </a>
+            <a href="https://www.linkedin.com/company/hera-digital-media" target="_blank" rel="noopener noreferrer">
             <Button
               variant="default"
               size="icon"
@@ -147,6 +160,8 @@ const Navigation = () => {
             >
               <Linkedin className="h-4 w-4" />
             </Button>
+            </a>
+            <a href="https://www.youtube.com/@ManojK_HeraDigitalMedia" target="_blank" rel="noopener noreferrer">
             <Button
               variant="default"
               size="icon"
@@ -154,6 +169,7 @@ const Navigation = () => {
             >
               <Youtube className="h-4 w-4" />
             </Button>
+            </a>
           </div>
         </div>
       </div>
