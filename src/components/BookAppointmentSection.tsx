@@ -6,37 +6,35 @@ const BookAppointmentSection = () => {
     <section id="book-appointment" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-sleek-green/10 via-sleek-charcoal to-sleek-charcoal-light"></div>
       
-      <div className="max-w-4xl mx-auto px-4 relative z-10">
-        {/* Hero Section
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-sleek-green to-sleek-green-dark bg-clip-text text-transparent">
-            Ready to take your next big step?
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join us now and start transforming your vision into reality with expert support.
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-sleek-green to-sleek-green-dark hover:from-sleek-green-dark hover:to-sleek-green transition-all duration-300 glow-green"
-          >
-            Book My Free Strategy Call
-          </Button>
-        </div> */}
-
-        {/* CTA Section */}
-        <div className="text-center">
-          <Card className="glass-card max-w-2xl mx-auto">
-            <CardContent className="pt-8">
-              <h3 className="text-2xl font-semibold mb-4">Ready to take your next big step?</h3>
-              <p className="text-muted-foreground mb-6">
-                Join us now and start transforming your vision into reality with expert support.
-              </p>
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-sleek-green to-sleek-green-dark hover:from-sleek-green-dark hover:to-sleek-green transition-all duration-300 glow-green"
-              >
-                Book an Appointment
-              </Button>
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white tracking-tight">
+          Ready to take your next big step?
+        </h2>
+        
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green">
+            <CardContent className="p-8">
+              <div className="space-y-6 text-foreground leading-relaxed text-center">
+                <p className="text-lg">
+                  Join us now and start transforming your vision into reality with expert support.
+                </p>
+                <p className="text-lg">
+                  We're here to help you turn your slow days into booked weeks with qualified leads and appointments that actually show up.
+                </p>
+                <p className="text-lg">
+                  Don't let another opportunity slip by. Your competition is already booking their calendars full—it's time to join them.
+                </p>
+                <p className="text-white font-bold text-lg">
+                  Let's get started today! &emsp;              
+                  <Button 
+                    variant="gradient" 
+                    size="lg" 
+                    className="px-8 py-3"
+                  >
+                    Book My Free Strategy Call
+                  </Button>
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
