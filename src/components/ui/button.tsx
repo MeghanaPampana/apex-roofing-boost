@@ -5,18 +5,18 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:scale-105",
   {
     variants: {
       variant: {
-        default: "bg-button-dark text-white hover:opacity-90 hover:shadow-lg transition-all duration-300",
+        default: "bg-button-dark text-white hover:bg-button-dark/90 transition-all duration-300",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         glass: "glass-card text-foreground hover:bg-sleek-charcoal-light hover:shadow-lg transition-all duration-300",
-        gradient: "bg-gradient-to-r from-sleek-green to-sleek-green-dark text-white hover:from-sleek-green-bright hover:to-sleek-green glow-green hover:scale-105",
+        gradient: "bg-sleek-green text-white hover:bg-sleek-green-dark transition-all duration-300",
         premium: "glass-form text-foreground border-sleek-green/30 hover:border-sleek-green/60 hover:glow-green transition-all duration-400",
       },
       size: {
