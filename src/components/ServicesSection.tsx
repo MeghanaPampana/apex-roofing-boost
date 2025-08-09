@@ -57,8 +57,17 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-sleek-charcoal via-sleek-charcoal-light to-sleek-green/10"></div>
-      
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-sleek-charcoal via-sleek-charcoal-light to-sleek-green/10"></div> */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: `
+            radial-gradient(circle at 0% 0%, rgba(18,128,0,0.4) 0%, transparent 20%),
+            radial-gradient(circle at 100% 100%, rgba(18,128,0,0.4) 0%, transparent 20%),
+            #0a0a0a
+          `
+        }}
+      ></div>
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">

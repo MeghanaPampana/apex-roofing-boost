@@ -21,7 +21,13 @@ const Footer = () => {
 
   return (
     <footer className="relative border-t border-sleek-charcoal-lighter">
-      <div className="absolute inset-0 bg-gradient-radial from-sleek-green/20 via-sleek-charcoal/80 to-sleek-charcoal"></div>
+      {/* <div className="absolute inset-0 bg-gradient-radial from-sleek-green/20 via-sleek-charcoal/80 to-sleek-charcoal"></div> */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(180deg, #062b00, #128000, #062b00)",
+        }}
+      ></div>
       <div className="max-w-7xl mx-auto px-4 py-16 relative z-10">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Company */}
@@ -51,7 +57,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link 
                     to={link.path}
-                    className="text-muted-foreground hover:text-white transition-colors text-sm"
+                    className="text-white hover:text-white transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -70,7 +76,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-muted-foreground hover:text-white transition-colors text-sm"
+                  className="flex items-center text-white hover:text-white transition-colors text-sm"
                 >
                   <social.icon className="h-4 w-4 mr-3" />
                   {social.label}
@@ -83,7 +89,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-6">Write to Us</h4>
             <div className="space-y-4">
-              <div className="flex items-center text-muted-foreground text-sm">
+              <div className="flex items-center text-white text-sm">
                 <Mail className="h-4 w-4 mr-3" />
                   <a 
                     href="mailto:contact@heradigitalmedia.com" 
@@ -101,7 +107,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-sleek-charcoal-lighter pt-8">
-          <p className="text-center text-muted-foreground text-sm">
+          <p className="text-center text-white text-sm">
             © 2025 Hera Digital Media. All Rights Reserved. Designed by Illuminavtion
           </p>
         </div>

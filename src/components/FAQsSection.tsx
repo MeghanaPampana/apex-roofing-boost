@@ -60,8 +60,11 @@ const FAQsSection = () => {
 
   return (
     <section id="faqs" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-sleek-charcoal-light via-sleek-charcoal to-sleek-green/20"></div>
-      
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-sleek-charcoal-light via-sleek-charcoal to-sleek-green/20"></div> */}
+      <div 
+        className="absolute inset-0" 
+        style={{ background: "radial-gradient(circle at 50% 50%, #128000, #000000)" }}
+      ></div>
       <div className="max-w-4xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
@@ -79,7 +82,7 @@ const FAQsSection = () => {
               value={`item-${index}`} 
               className="border-sleek-charcoal-lighter last:border-b-0"
             >
-              <AccordionTrigger className="text-left hover:text-white transition-colors">
+              <AccordionTrigger className="text-left hover:text-white transition-colors no-underline border-b-0">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground leading-relaxed">

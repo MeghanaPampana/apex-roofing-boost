@@ -16,9 +16,16 @@ const HeroSection = () => {
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Green to black gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sleek-green/20 via-sleek-charcoal to-sleek-charcoal-light"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_hsl(var(--green-primary))_0%,_transparent_50%)] opacity-20"></div>
-      
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-sleek-green/20 via-sleek-charcoal to-sleek-charcoal-light"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_hsl(var(--green-primary))_0%,_transparent_50%)] opacity-20"></div> */}
+      <div
+        className="absolute inset-0 opacity-80"
+        style={{
+          background: `      
+            radial-gradient(circle at 100% 100%, hsl(var(--green-primary)) 0%, transparent 20%)
+          `,
+        }}
+      ></div>
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video Section */}

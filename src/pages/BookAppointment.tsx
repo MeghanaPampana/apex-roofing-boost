@@ -85,7 +85,7 @@ const BookAppointment = () => {
                 </p>
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-sleek-green to-sleek-green-dark hover:from-sleek-green-dark hover:to-sleek-green transition-all duration-300 glow-green"
+                  className="from-sleek-green to-sleek-green-dark hover:from-sleek-green-dark hover:to-sleek-green transition-all duration-300 glow-green"
                 >
                   Book My Free Strategy Call
                 </Button>

@@ -64,9 +64,18 @@ const TestimonialsGrid = () => {
 
   return (
     <section id="testimonials" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-sleek-charcoal via-sleek-charcoal-light to-sleek-charcoal"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(var(--green-primary))_0%,_transparent_70%)] opacity-10"></div>
-      
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-sleek-charcoal via-sleek-charcoal-light to-sleek-charcoal"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(var(--green-primary))_0%,_transparent_70%)] opacity-10"></div> */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          background: `
+            radial-gradient(circle at 0% 0%, hsl(var(--green-primary)) 0%, transparent 20%),
+            radial-gradient(circle at 100% 50%, hsl(var(--green-primary)) 0%, transparent 20%),
+            radial-gradient(circle at 0% 100%, hsl(var(--green-primary)) 0%, transparent 20%)
+          `,
+        }}
+      ></div>
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-left mb-16 text-white tracking-tight">
           Testimonials
