@@ -9,21 +9,37 @@ const Navigation = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  const scrollToTestimonials = () => {
+  // const scrollToTestimonials = () => {
+  //   if (location.pathname !== "/") {
+  //     window.location.href = "/#testimonials";
+  //   } else {
+  //     const element = document.getElementById("testimonials");
+  //     element?.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
+
+  // const navItems = [
+  //   { name: "Home", path: "/" },
+  //   { name: "Testimonials", action: scrollToTestimonials },
+  //   { name: "About us", path: "/about" },
+  //   { name: "Our Services", path: "/services" },
+  //   { name: "FAQs", path: "/faqs" },
+  // ];
+  const scrollToSection = (id) => {
     if (location.pathname !== "/") {
-      window.location.href = "/#testimonials";
+      window.location.href = `/#${id}`;
     } else {
-      const element = document.getElementById("testimonials");
+      const element = document.getElementById(id);
       element?.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Testimonials", action: scrollToTestimonials },
-    { name: "About us", path: "/about" },
-    { name: "Our Services", path: "/services" },
-    { name: "FAQs", path: "/faqs" },
+    { name: "Home", action: () => scrollToSection("home") },
+    { name: "Testimonials", action: () => scrollToSection("testimonials") },
+    { name: "About us", action: () => scrollToSection("about") },
+    { name: "Our Services", action: () => scrollToSection("services") },
+    { name: "FAQs", action: () => scrollToSection("faqs") },
   ];
 
   return (
@@ -42,7 +58,7 @@ const Navigation = () => {
           </Link>
 
           {/* Nav Buttons with background */}
-          <div className="hidden lg:flex items-center flex-1 justify-center">
+          {/* <div className="hidden lg:flex items-center flex-1 justify-center">
             <div className="border border-white/20 rounded-xl px-4 py-2 space-x-6 backdrop-blur flex items-center">
               {navItems.map((item) =>
                 item.path ? (
@@ -62,6 +78,34 @@ const Navigation = () => {
                     key={item.name}
                     onClick={item.action}
                     className="text-sm font-medium transition-colors duration-300 text-foreground hover:text-sleek-green whitespace-nowrap"
+                  >
+                    {item.name}
+                  </button>
+                )
+              )}
+            </div>
+          </div> */}
+          {/* Nav Buttons with background */}
+          <div className="hidden lg:flex items-center flex-1 justify-center">
+            <div className="border border-white/10 rounded-xl px-6 py-3 space-x-8 backdrop-blur-md flex items-center bg-white/5">
+              {navItems.map((item) =>
+                item.path ? (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className={`text-sm font-medium whitespace-nowrap transition-colors duration-300 ${
+                      isActive(item.path)
+                        ? "text-sleek-green underline decoration-sleek-green underline-offset-4"
+                        : "text-white hover:text-sleek-green hover:underline hover:decoration-sleek-green hover:underline-offset-4"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <button
+                    key={item.name}
+                    onClick={item.action}
+                    className="text-sm font-medium whitespace-nowrap text-white hover:text-sleek-green hover:underline hover:decoration-sleek-green hover:underline-offset-4 transition-colors duration-300 bg-transparent border border-transparent hover:border-sleek-green rounded-md px-3 py-1"
                   >
                     {item.name}
                   </button>

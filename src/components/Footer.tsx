@@ -29,20 +29,15 @@ const Footer = () => {
         }}
       ></div>
       <div className="max-w-7xl mx-auto px-4 py-16 relative z-10">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-4 gap-4 mb-2">
           {/* Logo and Company */}
-          <div>
-            <div className="flex items-center mb-6">
-              <div className="p-2 rounded-xl bg-gradient-to-br from-sleek-green to-sleek-green-dark glow-green">
-                <img 
-                  src={roofingLogo} 
-                  alt="Hera Digital Media Logo" 
-                  className="h-8 w-8 filter brightness-0 invert"
-                />
-              </div>
-              <span className="ml-3 text-lg font-bold text-white">
-                Hera Digital Media
-              </span>
+          <div className="flex flex-col items-center">
+            <div className="flex items-center mb-6 text-lg gap-3">
+            <img 
+              src={roofingLogo} 
+              alt="Hera Digital Media Logo" 
+              className="w-[20rem] h-[20rem]" 
+            />              
             </div>
             {/* <p className="text-muted-foreground text-sm leading-relaxed">
               Helping contractors grow their businesses with qualified leads and booked appointments.
@@ -50,7 +45,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className="flex flex-col items-center">
             <h4 className="text-white font-semibold mb-6">Navigation</h4>
             <ul className="space-y-3">
               {navigationLinks.map((link) => (
@@ -67,7 +62,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div>
+          <div className="flex flex-col items-center">
             <h4 className="text-white font-semibold mb-6">Socials</h4>
             <div className="flex flex-col gap-3">
               {socialLinks.map((social) => (
@@ -86,7 +81,7 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="flex flex-col items-center">
             <h4 className="text-white font-semibold mb-6">Write to Us</h4>
             <div className="space-y-4">
               <div className="flex items-center text-white text-sm">
@@ -106,8 +101,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-sleek-charcoal-lighter pt-8">
-          <p className="text-center text-white text-sm">
+        <div className="border-t border-sleek-charcoal-lighter pt-8 mt-auto">
+          <p className="text-center text-muted-foreground text-sm">
             © 2025 Hera Digital Media. All Rights Reserved. Designed by Illuminavtion
           </p>
         </div>

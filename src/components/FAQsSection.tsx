@@ -59,45 +59,40 @@ const FAQsSection = () => {
   ];
 
   return (
-    <section id="faqs" className="py-20 relative overflow-hidden">
-      {/* <div className="absolute inset-0 bg-gradient-to-br from-sleek-charcoal-light via-sleek-charcoal to-sleek-green/20"></div> */}
+    <section id="faqs" className="py-20 relative overflow-hidden ">      
       <div 
-        className="absolute inset-0" 
+        className="absolute inset-0 " 
         style={{ background: "radial-gradient(circle at 50% 50%, #128000, #000000)" }}
       ></div>
-      <div className="max-w-4xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+      <div className="max-w-6xl mx-auto px-1 relative z-10 ">
+        <div className="text-center mb-16  ">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight ">
             FAQs
           </h2>
-          {/* <p className="text-xl text-muted-foreground">
-            Get answers to common questions about our services and process.
-          </p> */}
         </div>
-
-        <Accordion type="single" collapsible className="glass-card p-6 space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem 
-              key={index} 
-              value={`item-${index}`} 
-              className="border-sleek-charcoal-lighter last:border-b-0"
-            >
-              <AccordionTrigger className="text-left hover:text-white transition-colors no-underline border-b-0">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
-                {faq.answer}
-                {faq.hasButton && (
-                  <div className="mt-4">
-                    <Button variant="gradient" size="lg">
-                      Book an Appointment
-                    </Button>
-                  </div>
-                )}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <Accordion type="single" collapsible className="glass-card p-14 space-y-3 bg-black rounded-2xl">
+        {faqs.map((faq, index) => (
+          <AccordionItem
+            key={index}
+            value={`item-${index}`}
+            className="border border-sleek-charcoal-lighter rounded-xl bg-[#080808] last:mb-0"
+          >
+            <AccordionTrigger className="flex justify-between items-center text-white text-left px-5 py-4 rounded-xl transition-colors">
+              {faq.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed px-5 pb-6 pt-2">
+              {faq.answer}
+              {faq.hasButton && (
+                <div className="mt-4">
+                  <Button variant="gradient" size="lg">
+                    Book an Appointment
+                  </Button>
+                </div>
+              )}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
       </div>
     </section>
   );
