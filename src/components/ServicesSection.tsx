@@ -69,16 +69,65 @@ const ServicesSection = () => {
           </p> */}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.slice(0, 4).map((service, index) => (
-            <Card key={index} className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green h-full">
+        {/* First row - 2 cards centered */}
+        <div className="flex justify-center mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+            {services.slice(0, 2).map((service, index) => (
+              <Card key={index} className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green h-full">
+                <CardHeader>
+                  <CardTitle className="text-xl text-white">{service.title}</CardTitle>
+                  <p className="text-muted-foreground">{service.subtitle}</p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {service.bullets.map((bullet, bulletIndex) => (
+                      <li key={bulletIndex} className="flex items-start text-sm">
+                        <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Second row - 2 cards centered */}
+        <div className="flex justify-center mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+            {services.slice(2, 4).map((service, index) => (
+              <Card key={index + 2} className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green h-full">
+                <CardHeader>
+                  <CardTitle className="text-xl text-white">{service.title}</CardTitle>
+                  <p className="text-muted-foreground">{service.subtitle}</p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {service.bullets.map((bullet, bulletIndex) => (
+                      <li key={bulletIndex} className="flex items-start text-sm">
+                        <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Third row - 1 card centered */}
+        <div className="flex justify-center mb-16">
+          <div className="max-w-2xl w-full">
+            <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green">
               <CardHeader>
-                <CardTitle className="text-xl text-white">{service.title}</CardTitle>
-                <p className="text-muted-foreground">{service.subtitle}</p>
+                <CardTitle className="text-xl text-white">{services[4].title}</CardTitle>
+                <p className="text-muted-foreground">{services[4].subtitle}</p>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2">
-                  {service.bullets.map((bullet, bulletIndex) => (
+                <ul className="grid md:grid-cols-2 gap-4">
+                  {services[4].bullets.map((bullet, bulletIndex) => (
                     <li key={bulletIndex} className="flex items-start text-sm">
                       <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       {bullet}
@@ -87,25 +136,7 @@ const ServicesSection = () => {
                 </ul>
               </CardContent>
             </Card>
-          ))}
-          
-          {/* Fifth service card spanning full width */}
-          <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green md:col-span-2 lg:col-span-3">
-            <CardHeader>
-              <CardTitle className="text-xl text-white">{services[4].title}</CardTitle>
-              <p className="text-muted-foreground">{services[4].subtitle}</p>
-            </CardHeader>
-            <CardContent>
-              <ul className="grid md:grid-cols-3 gap-4">
-                {services[4].bullets.map((bullet, bulletIndex) => (
-                  <li key={bulletIndex} className="flex items-start text-sm">
-                    <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+          </div>
         </div>
       </div>
     </section>

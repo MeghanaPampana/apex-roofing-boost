@@ -17,7 +17,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-20">
           <div>
             <p className="text-lg text-foreground leading-relaxed mb-8">
               At Hera Digital Media, we specialize in helping roofers and home improvement contractors across the US grow their businesses with qualified leads and booked appointments — no fluff, no shared leads, no wasted time.
