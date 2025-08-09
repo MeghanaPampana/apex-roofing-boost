@@ -119,14 +119,14 @@ const ServicesSection = () => {
 
         {/* Third row - 1 card centered */}
         <div className="flex justify-center mb-16">
-          <div className="max-w-2xl w-full">
-            <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green">
+          <div className="w-full max-w-md">
+            <Card className="glass-card border-sleek-charcoal-lighter hover:border-sleek-green/50 transition-all duration-500 hover:glow-green h-full">
               <CardHeader>
                 <CardTitle className="text-xl text-white">{services[4].title}</CardTitle>
                 <p className="text-muted-foreground">{services[4].subtitle}</p>
               </CardHeader>
               <CardContent>
-                <ul className="grid md:grid-cols-2 gap-4">
+                <ul className="space-y-2">
                   {services[4].bullets.map((bullet, bulletIndex) => (
                     <li key={bulletIndex} className="flex items-start text-sm">
                       <span className="w-2 h-2 bg-sleek-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
